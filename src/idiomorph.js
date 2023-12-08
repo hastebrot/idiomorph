@@ -318,7 +318,7 @@
                         to.value = fromValue;
                     }
                 } else if (from instanceof HTMLOptionElement) {
-                    syncBooleanAttribute(from, to, 'selected')
+                    syncBooleanAttribute(from, to, 'selected');
                 } else if (from instanceof HTMLTextAreaElement && to instanceof HTMLTextAreaElement) {
                     let fromValue = from.value;
                     let toValue = to.value;
@@ -326,7 +326,7 @@
                         to.value = fromValue;
                     }
                     if (to.firstChild && to.firstChild.nodeValue !== fromValue) {
-                        to.firstChild.nodeValue = fromValue
+                        to.firstChild.nodeValue = fromValue;
                     }
                 }
             }
